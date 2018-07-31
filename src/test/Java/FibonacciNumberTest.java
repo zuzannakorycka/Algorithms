@@ -11,5 +11,12 @@ public class FibonacciNumberTest {
         result = fibonacciNumber.fibonacciRecursively(6);
         assertEquals(8, result);
     }
+    @Test
+    public void shouldReturnEightForParameterSixInMethodFibonacciIteratively(){
+        result = fibonacciNumber.fibonacciIteratively(6);
+        assertEquals(8, result);
+    }
+
+
 
 }
