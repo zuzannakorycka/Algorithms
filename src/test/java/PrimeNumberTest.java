@@ -18,4 +18,10 @@ public class PrimeNumberTest {
         result = primeNumber.primeNumberIteratively(10);
         assertFalse(result);
     }
+
+    @Test
+    public void shouldReturnTrueForNumberThreeInMethodRecursively(){
+        result = primeNumber.primeNumberRecursively(11, (int) Math.sqrt(11));
+        assertTrue(result);
+    }
 }
