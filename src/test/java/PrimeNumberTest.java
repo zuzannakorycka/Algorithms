@@ -21,6 +21,12 @@ public class PrimeNumberTest {
 
     @Test
     public void shouldReturnTrueForNumberThreeInMethodRecursively(){
+        result = primeNumber.primeNumberRecursively(3, (int) Math.sqrt(3));
+        assertTrue(result);
+    }
+
+    @Test
+    public void shouldReturnFalseForNumberElevenInMethodRecursively(){
         result = primeNumber.primeNumberRecursively(11, (int) Math.sqrt(11));
         assertTrue(result);
     }
