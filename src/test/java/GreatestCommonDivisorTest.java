@@ -13,4 +13,10 @@ public class GreatestCommonDivisorTest {
         assertEquals(3, result);
     }
 
+    @Test
+    public void shouldReturnThreeForTwelveAndThreeInMethodIteratively(){
+        result = greatestCommonDivisor.gdcIteratively(12,3);
+        assertEquals(3, result);
+    }
+
 }
