@@ -19,4 +19,10 @@ public class FactorialTest {
         assertEquals(24, result);
     }
 
+    @Test
+    public void shouldReturnOneForZeroInMethodRecursively(){
+        result = factorial.factorialIteratively(0);
+        assertEquals(1,result);
+    }
+
 }
