@@ -12,4 +12,10 @@ public class PrimeNumberTest {
         result = primeNumber.primeNumberIteratively(5);
         assertTrue(result);
     }
+
+    @Test
+    public void shouldReturnFalseForNumberTenInMethodIteratively(){
+        result = primeNumber.primeNumberIteratively(10);
+        assertFalse(result);
+    }
 }
