@@ -13,4 +13,10 @@ public class FactorialTest {
         assertEquals(24, result);
     }
 
+    @Test
+    public void shouldReturnTwentyfourForFourInMethodIteratively(){
+        result = factorial.factorialIteratively(4);
+        assertEquals(24, result);
+    }
+
 }
