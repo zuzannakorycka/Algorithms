@@ -19,4 +19,10 @@ public class GreatestCommonDivisorTest {
         assertEquals(3, result);
     }
 
+    @Test
+    public void shouldReturnOneForFiveAndTwelveInMethodIteratively(){
+        result = greatestCommonDivisor.gdcIteratively(5,12);
+        assertEquals(1, result);
+    }
+
 }
