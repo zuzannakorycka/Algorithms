@@ -8,7 +8,7 @@ public class SumOfTheDigitsOfTheIntegerTest {
     int result;
 
     @Test(expected = IllegalArgumentException.class)
-    public void shouldThrowIllegalArgumentExceptionForNegativeParametersInMethod(){
+    public void shouldThrowIllegalArgumentExceptionForNegativeParametersInMethodRecursively(){
         sumOfTheDigitsOfTheInteger.sumOfIntegerRecursively(-5);
     }
 
@@ -22,5 +22,10 @@ public class SumOfTheDigitsOfTheIntegerTest {
     public void shouldReturnZeroForParametersZeroInMethodRecursively(){
         result = sumOfTheDigitsOfTheInteger.sumOfIntegerRecursively(0);
         assertEquals(0, result);
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void shouldThrowIllegalArgumentExceptionForNegativeParametersInMethodIteratively(){
+        sumOfTheDigitsOfTheInteger.sumOfIntegerIteratively(-5);
     }
 }
