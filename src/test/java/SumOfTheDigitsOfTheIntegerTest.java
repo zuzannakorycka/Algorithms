@@ -17,4 +17,10 @@ public class SumOfTheDigitsOfTheIntegerTest {
         result = sumOfTheDigitsOfTheInteger.sumOfIntegerRecursively(12);
         assertEquals(3, result);
     }
+
+    @Test
+    public void shouldReturnZeroForParametersZeroInMethodRecursively(){
+        result = sumOfTheDigitsOfTheInteger.sumOfIntegerRecursively(0);
+        assertEquals(0, result);
+    }
 }
