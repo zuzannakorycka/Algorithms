@@ -8,7 +8,7 @@ public class SumOfASequenceOfIntegersTest {
     int result;
 
     @Test(expected = IllegalArgumentException.class)
-    public void shouldThrowIllegalArgumentExceptionOnNegativeParameters() {
+    public void shouldThrowIllegalArgumentExceptionOnNegativeParametersInMethodRecursively() {
         sum.sumRecursively(-4);
     }
 
@@ -23,6 +23,12 @@ public class SumOfASequenceOfIntegersTest {
         result = sum.sumRecursively(0);
         assertEquals(0, result);
     }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void shouldThrowIllegalArgumentExceptionOnNegativeParametersInMethodIteratively(){
+        sum.sumIteratively(-4);
+    }
+
     @Test
     public  void shouldReturnSixForThreeInMethodIteratively(){
         result = sum.sumIteratively(3);
