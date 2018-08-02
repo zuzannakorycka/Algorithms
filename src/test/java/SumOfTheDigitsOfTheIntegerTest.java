@@ -34,4 +34,10 @@ public class SumOfTheDigitsOfTheIntegerTest {
         result = sumOfTheDigitsOfTheInteger.sumOfIntegerIteratively(12);
         assertEquals(3, result);
     }
+
+    @Test
+    public void shouldReturnZeroForParametersZeroInMethodIteratively(){
+        result = sumOfTheDigitsOfTheInteger.sumOfIntegerIteratively(0);
+        assertEquals(0, result);
+    }
 }
