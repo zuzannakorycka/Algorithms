@@ -18,4 +18,10 @@ public class ExponentiationTest {
         result = exponentiation.exponentiationRecursively(2,0);
         assertEquals(1,result);
     }
+
+    @Test
+    public void shouldReturnNegativeNumberInFunctionRecursively(){
+        result = exponentiation.exponentiationRecursively(-2, 3);
+        assertEquals(-8,result);
+    }
 }
