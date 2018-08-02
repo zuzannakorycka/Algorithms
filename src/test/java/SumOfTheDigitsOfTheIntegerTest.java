@@ -11,4 +11,10 @@ public class SumOfTheDigitsOfTheIntegerTest {
     public void shouldThrowIllegalArgumentExceptionForNegativeParametersInMethod(){
         sumOfTheDigitsOfTheInteger.sumOfIntegerRecursively(-5);
     }
+
+    @Test
+    public void shouldReturnThreeForParametersTwelveInMethodRecursively(){
+        result = sumOfTheDigitsOfTheInteger.sumOfIntegerRecursively(12);
+        assertEquals(3, result);
+    }
 }
