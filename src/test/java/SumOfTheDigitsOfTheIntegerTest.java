@@ -28,4 +28,10 @@ public class SumOfTheDigitsOfTheIntegerTest {
     public void shouldThrowIllegalArgumentExceptionForNegativeParametersInMethodIteratively(){
         sumOfTheDigitsOfTheInteger.sumOfIntegerIteratively(-5);
     }
+
+    @Test
+    public void shouldReturnThreeForParametersTwelveInMethodIteratively(){
+        result = sumOfTheDigitsOfTheInteger.sumOfIntegerIteratively(12);
+        assertEquals(3, result);
+    }
 }
