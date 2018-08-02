@@ -34,4 +34,10 @@ public class SumOfASequenceOfIntegersTest {
         result = sum.sumIteratively(3);
         assertEquals(6, result);
     }
+
+    @Test
+    public void shouldReturnZeroForZeroInMethodIteratively(){
+        result = sum.sumIteratively(0);
+        assertEquals(0, result);
+    }
 }
