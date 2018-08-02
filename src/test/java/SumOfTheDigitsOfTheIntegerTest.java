@@ -9,6 +9,6 @@ public class SumOfTheDigitsOfTheIntegerTest {
 
     @Test(expected = IllegalArgumentException.class)
     public void shouldThrowIllegalArgumentExceptionForNegativeParametersInMethod(){
-        sumOfTheDigitsOfTheInteger.sumOfIntegerRecursively(-5);]\
+        sumOfTheDigitsOfTheInteger.sumOfIntegerRecursively(-5);
     }
 }
