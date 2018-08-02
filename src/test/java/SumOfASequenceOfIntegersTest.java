@@ -17,4 +17,10 @@ public class SumOfASequenceOfIntegersTest {
         result = sum.sumRecursively(3);
         assertEquals(6, result);
     }
+
+    @Test
+    public void shouldReturnZeroForZeroInMethodRecursively(){
+        result = sum.sumRecursively(0);
+        assertEquals(0, result);
+    }
 }
