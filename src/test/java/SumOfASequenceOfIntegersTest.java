@@ -23,4 +23,9 @@ public class SumOfASequenceOfIntegersTest {
         result = sum.sumRecursively(0);
         assertEquals(0, result);
     }
+    @Test
+    public  void shouldReturnSixForThreeInMethodIteratively(){
+        result = sum.sumIteratively(3);
+        assertEquals(6, result);
+    }
 }
